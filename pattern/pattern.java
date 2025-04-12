@@ -7,11 +7,11 @@ public class pattern {
 
     public static void printpattern(int n) {
 
-        for (int i = 0; i <= n; i++) {
-            for (int j = 0; j < (n - i); j++) {
+        for (int r = 0; r <= n; r++) {
+            for (int c = 0; c < (n - r); c++) {
                 System.out.print(" ");
             }
-            for (int j = 0; j <= i; j++) {
+            for (int c = 0; c <= r; c++) {
                 System.out.print("* " );
             }
             System.out.println();
@@ -19,3 +19,15 @@ public class pattern {
     }
    
 }
+/*
+         * 
+        * * 
+       * * * 
+      * * * * 
+     * * * * * 
+    * * * * * * 
+   * * * * * * * 
+  * * * * * * * * 
+ * * * * * * * * * 
+* * * * * * * * * * 
+ */
