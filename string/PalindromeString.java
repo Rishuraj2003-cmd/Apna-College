@@ -2,7 +2,7 @@ package string;
 
 public class PalindromeString {
     public static void main(String[] args) {
-        String str = "madam";
+        String str = "A man, a plan, a canal ,  Panama";
         CheckPalindrome(str);
     }
     public static boolean CheckPalindrome(String str){

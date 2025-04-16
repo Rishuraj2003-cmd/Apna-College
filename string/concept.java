@@ -1,13 +1,14 @@
 package string;
 
-import java.util.Scanner;
+// import java.util.Scanner;
 
 public class concept {
     public static void main(String[] args) {
-        char arr[]={'A','B','C','D'};
+        // char arr[]={'A','B','C','D'};
         String str = "Rishu";
         System.out.println(str);
-        // System.out.println(arr);
+        String name = str.substring(3);
+        System.out.println(name);
 
         // Scanner sc = new Scanner(System.in);
         // String name;
@@ -15,12 +16,13 @@ public class concept {
         // System.out.println("MY NAME IS : " +name);
         // System.out.println("String length : " +name.length());
         // System.out.println(name.charAt(3));
-        printChar(str);
+       
+        // printChar(str);
     }
-    public static void printChar(String str){
-        for(int i = 0 ; i<str.length();i++){
-            System.out.print(str.charAt(i) + " ");
-        }
-        System.out.println();
-    }
+    // public static void printChar(String str){
+    //     for(int i = 0 ; i<str.length();i++){
+    //         System.out.print(str.charAt(i) + " ");
+    //     }
+    //     System.out.println();
+    // }
 }
