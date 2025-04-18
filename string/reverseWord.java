@@ -21,7 +21,7 @@ public class reverseWord {
 }
 
 /* 
-public void reverseString(char[] s) {
+public void reverseString(char[] s={'h', 'e', 'l', 'l', 'o'}) {
     int front = 0;
     int back = s.length - 1;
 

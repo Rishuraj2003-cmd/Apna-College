@@ -2,7 +2,7 @@ package string;
 
 public class LofLastWord {
     public static void main(String[] args) {
-        String str = " my name is ram ";
+        String str = " a ";
         System.out.println(wordLength(str));
     }
     public static int wordLength(String s){
