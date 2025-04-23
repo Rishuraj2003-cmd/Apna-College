@@ -1,4 +1,5 @@
 package oops;
+// Top-level class
 class Gp {
     void gp() {
         System.out.println("I am grandparent");
