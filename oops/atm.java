@@ -31,14 +31,18 @@ public class atm {
             System.out.println("4. Exit");
             Scanner sc = new Scanner(System.in);
             int opt = sc.nextInt();
+           
             if (opt == 1) {
                 checkBalance();
             } else if (opt == 2) {
                 WithdrawMoney();
             } else if (opt == 3) {
                 depositMoney();
-            } else if (opt == 4) {
-                return ;
+            }
+             else if (opt == 4) {
+                sc.close();
+                return  ;
+              
             } else {
                 System.out.print("Enter correct option.");
             }
