@@ -41,7 +41,7 @@ public class ExHandle {
     catch(ArrayIndexOutOfBoundsException p){
         System.out.println(p.getMessage());
     }
-   
+   sc.close();
  }
     
 }
