@@ -1,4 +1,5 @@
-public class countPrime {
+public class countPrime 
+    {
         public static int countPrimes(int n) {
             if (n <= 2) return 0;
     
@@ -27,5 +28,5 @@ public class countPrime {
             int n = 30;
             System.out.println("Number of primes less than " + n + " is: " + countPrimes(n));
         }
-    }
+}
     
