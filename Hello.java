@@ -9,7 +9,7 @@ public class Hello{
         // int z1 = t1.x+t1.y;
         // Hello t2 = new Hello();
         // System.out.println(t2.x+" "+t2.y+" "+z1);
-        // System.out.println(8+3);
+        System.out.println(8+3);
         // System.out.printf("Hello %s!", "World");
     }
 }
