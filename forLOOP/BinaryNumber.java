@@ -1,45 +1,39 @@
 package forLOOP;
 
 public class BinaryNumber {
-    
 
-        // Function to add two binary strings
-        public static String addBinary(String a, String b) {
-            StringBuilder result = new StringBuilder();
-    
-            int i = a.length() - 1;  // Pointer for string a
-            int j = b.length() - 1;  // Pointer for string b
-            int carry = 0;           // Carry for addition
-    
-            // Loop until both strings are processed or carry is left
-            while (i >= 0 || j >= 0 || carry == 1) {
-                int sum = carry;
-    
-                if (i >= 0) {
-                    sum += a.charAt(i) - '0'; // Convert char to int
-                    i--;
-                }
-    
-                if (j >= 0) {
-                    sum += b.charAt(j) - '0'; // Convert char to int
-                    j--;
-                }
-    
-                result.append(sum % 2);   // Add current bit
-                carry = sum / 2;          // Update carry
+    public static String addBinary(String a, String b) {
+        StringBuilder result = new StringBuilder();
+
+        int n1 = a.length() - 1;    // Pointer for string a
+        int n2 = b.length() - 1;    // Pointer for string b
+        int carry = 0;              // Carry for addition
+        // int base = 2 ;
+        while (n1 >= 0 || n2 >= 0 || carry != 0) {
+            int bit1 = 0;
+            if (n1 >= 0) {
+                bit1 = a.charAt(n1) - '0';
+                n1--;
             }
-    
-            // Reverse and return the final binary string
-            return result.reverse().toString();
+            int bit2 = 0;
+            if (n2 >= 0) {
+                bit2 = b.charAt(n2) - '0';
+                n2--;
+            }
+            int sum = bit1 + bit2 + carry;
+            result.append(sum % 2);
+            carry = sum / 2;
         }
-    
-        // Main method to test
-        public static void main(String[] args) {
-            String a = "111";  // 11 in decimal
-            String b = "111";  // 13 in decimal
-    
-            String sum = addBinary(a, b);
-            System.out.println("Sum of " + a + " + " + b + " = " + sum);  // Output: 11000
-        }
-    
+        return result.reverse().toString();
+    }
+
+    // Main 
+    public static void main(String[] args) {
+        String a = "111"; // 11 
+        String b = "101"; // 13 
+
+        String sum = addBinary(a, b);
+        System.out.println("Sum of " + a + " + " + b + " = " + sum); // Output: 11000
+    }
+
 }
